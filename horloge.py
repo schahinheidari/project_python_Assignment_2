@@ -1,19 +1,12 @@
 #Assignment 2
 
-x = int(input("please input your second: "))
+def horloge(sec):
+    a = str(sec//3600)
+    b = str((sec%3600)//60)
+    c = str((sec%3600)%60)
+    d = print(a, ":", b, ":", c)
+    return d
 
+sec = int(input("please input your second: "))
 
-if 0 < x < 60:
-    print(x)
-
- 
-if 60 < x < 3600:
-    a = x / 60
-    print(a)
-
-if 3600 < x < 86400:
-    s = x / 3600
-    print(s)
-
-
-
+horloge(sec)
